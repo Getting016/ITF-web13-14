@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="lab14.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <a id="socialLink" href="https://github.com/Getting016/ITF-web-1.git" target="_blank">
+            <h1 id="username" class="username">Hi Everyone</h1>
+        </a>
+        <div class="profile-section">
+            <div class="profile" id="profile" style="background-image: url(https://creatorset.com/cdn/shop/files/preview_images/Screenshot_2024-04-24_173231_530x@2x.png?v=1713973028);">
+                <p class="notification">1</p>
+            </div>
+            <div class="edit-section">
+                <label for="input" style="color: blue; ">Username:</label>
+                <input type="text" placeholder="Name" id="input" style="margin-left: -7px;">
+                <button onclick="setUsername()">SET</button>
+                <br>
+                <label for="profileInput" style="color: blue;">Url Profile:</label>
+                <input type="text" placeholder="Url-Profile" id="profileInput" style="margin-left: -7px;">
+                <button onclick="setImage()">SET</button>
+            </div>
+        </div>
+
+        <div class="phone-book-section">
+            <h2>Name & PhoneNumber</h2>
+            <input type="text" placeholder="Name" id="cellName">
+            <input type="tel" placeholder="Phone Number" id="cellTel">
+            <button onclick="addRow()">ADD</button>
+            <button onclick="saveCSV()">EXPORT</button>
+            <div class="grid-container">
+                <div class="grid-item">No</div>
+                <div class="grid-item" >Name</div>
+                <div class="grid-item">Phone Number</div>
+            </div>
+            <table id="phoneBookList"></table>
+        </div>
+    </div>
+</body>
+</html>
